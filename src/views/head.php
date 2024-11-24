@@ -36,6 +36,11 @@
             .admin-links a {
                 margin-left: 10px;
             }
+            .date-info {
+                font-style: italic;
+                font-size: smaller;
+                margin-bottom: 5px;
+            }
         </style>
     </head>
     <body>

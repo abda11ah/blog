@@ -21,7 +21,8 @@
 
       public static function update($db, $id, $title, $content) {
         $stmt = $db->prepare("UPDATE posts SET title = ?, content = ? WHERE id = ?");
-        return $stmt->execute([$title, $content, $id]);
+        $stmt->execute([$title, $content, $id]);
+        return $db->lastInsertId();
       }
 
       public static function delete($db, $id) {
